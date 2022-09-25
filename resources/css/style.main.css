@@ -9,13 +9,32 @@
 body {
     height: 100vh;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(white, darkgrey);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 40;
+    /* background: rgb(0,212,255);
+    background: -moz-radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 85%, rgba(2,0,36,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 85%, rgba(2,0,36,1) 100%);
+    background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 85%, rgba(2,0,36,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00d4ff",endColorstr="#020024",GradientType=1);  */
+    background-image: radial-gradient( circle 1297px at -5.8% 21.8%,  rgba(18,35,60,1) 0%, #ddd 72%, #bbb 90%);
+    /* background-image: radial-gradient( circle 273px at -5.8% 21.8%,  #bbb 82%, #ddd 125%, rgba(18,35,60,1) 391%); */
+}
+
+.logo h1 b {
+    font-size: 60px;
+    color: white;
+}
+
+.logo h6 {
+    font-size: 20px;
     font-weight: 100;
+    letter-spacing: 2px;
 }
